@@ -28,8 +28,6 @@ describe("Fetch Check-in History Use Case", () => {
       page: 1,
     })
 
-    console.log(checkInsRepository.items)
-
     expect(checkIns).toHaveLength(2)
     expect(checkIns).toEqual([
       expect.objectContaining({ gym_id: "gym-01" }),
@@ -49,8 +47,6 @@ describe("Fetch Check-in History Use Case", () => {
       userId: "user-01",
       page: 2,
     })
-
-    console.log(checkInsRepository.items)
 
     expect(checkIns).toHaveLength(2)
     expect(checkIns).toEqual([
