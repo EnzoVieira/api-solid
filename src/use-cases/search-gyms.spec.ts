@@ -7,7 +7,7 @@ let gymsRepository: InMemoryGymsRepository
 let sut: SearchGymsUseCase
 
 describe("Search Gyms Use Case", () => {
-  beforeEach(async () => {
+  beforeEach(() => {
     gymsRepository = new InMemoryGymsRepository()
     sut = new SearchGymsUseCase(gymsRepository)
   })
